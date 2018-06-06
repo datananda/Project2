@@ -63,13 +63,20 @@ models.sequelize.sync().then(function() {
  
 });
  
+
+var PORT = process.env.PORT || 3000;
+// db.sequelize.sync().then(function() {
+    app.listen(PORT)
+//         console.log("App listening on PORT " + PORT);
+//     })
+// })
  
-app.listen(5000, function(err) {
+// app.listen(5000, function(err) {
  
-    if (!err)
+//     if (!err)
  
-        console.log("Site is live");
+//         console.log("Site is live");
          
-    else console.log(err)
+//     else console.log(err)
  
-}); 
+// }); 
